@@ -1,0 +1,16 @@
+version: "3.7"
+
+
+services: 
+  web-server: 
+    image: httpd:latest
+    ports: 
+      - "80"
+    volumes: 
+      - mahmoud-web-server:/usr/local/apache2/htdocs/
+    
+    
+    
+volumes:
+  mahmoud-web-server: 
+    external: true
